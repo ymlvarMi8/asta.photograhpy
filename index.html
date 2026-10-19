@@ -126,6 +126,24 @@ footer{padding:28px 0;text-align:center;font-size:.9rem;color:var(--muted);backg
   .logo span{display:none}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.grow{transition:none}}
+
+/* pricing */
+#pricing{padding:96px 0;border-top:3px solid var(--black);background:var(--pink)}
+.p-intro{max-width:64ch;margin:0 0 40px}
+.p-intro p{margin:0 0 14px}
+.p-intro ul{list-style:none;margin:0 0 14px;padding:0}
+.p-intro li{position:relative;padding-left:20px}
+.p-intro li::before{content:"";position:absolute;left:0;top:.65em;width:8px;height:8px;border-radius:50%;background:var(--red)}
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.p-card{background:var(--base);border:2px solid var(--black);border-radius:18px;padding:28px 26px}
+.p-card h3{font-size:1.4rem}
+.p-price{font-family:var(--serif);font-weight:600;font-size:2.3rem;line-height:1;color:var(--red);margin:10px 0 18px}
+.p-card ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.p-card li{position:relative;padding-left:20px;font-size:.97rem;line-height:1.5}
+.p-card li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--red)}
+.p-foot{margin-top:36px;display:flex;gap:10px 28px;flex-wrap:wrap;font-weight:500}
+@media(max-width:1000px){.p-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.p-grid{grid-template-columns:1fr}#pricing{padding:64px 0}}
 </style>
 </head>
 <body>
@@ -136,6 +154,7 @@ footer{padding:28px 0;text-align:center;font-size:.9rem;color:var(--muted);backg
     <ul>
       <li><a href="#home" class="grow">Головна</a></li>
       <li><a href="#gallery" class="grow">Галерея</a></li>
+      <li><a href="#pricing" class="grow">Прайс</a></li>
       <li><a href="#reviews" class="grow">Відгуки</a></li>
       <li><a href="#contacts" class="grow">Контакти</a></li>
     </ul>
@@ -194,6 +213,27 @@ footer{padding:28px 0;text-align:center;font-size:.9rem;color:var(--muted);backg
       <div class="cat-top"><h3>Випускні</h3></div>
       <div class="g5" data-n="5"></div>
     </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-head"><h2>Прайс та умови зйомки</h2></div>
+    <div class="p-intro">
+      <p>🤍 Усі вдалі фотографії проходять повну обробку та ретуш.</p>
+      <p>Перед зйомкою я обов’язково консультую по образу та допомагаю підібрати стиль. Разом ми заздалегідь складаємо референси, щоб зйомка була максимально продуманою та комфортною.</p>
+      <p><b>📌 За 1 годину зйомки зазвичай встигаємо:</b></p>
+      <ul><li>1–2 образи (залежно від складності та локації)</li></ul>
+      <p>📍 Зйомка можлива в студії або на природі</p>
+    </div>
+    <div class="p-grid">
+      <div class="p-card"><h3>Індивідуальна фотосесія</h3><div class="p-price">1000 грн</div><ul><li>за 1 години зйомки</li><li>консультація та підбір образу</li><li>підбір референсів перед зйомкою</li><li>усі вдалі фото в обробці та ретуші</li><li>готовність фото: 1–2 дні</li></ul></div>
+      <div class="p-card"><h3>Love Story</h3><div class="p-price">1200 грн</div><ul><li>за 1 години зйомки</li><li>консультація по образах для двох</li><li>підбір референсів перед зйомкою</li><li>усі вдалі фото в обробці та ретуші</li><li>готовність фото: до 2 днів</li></ul></div>
+      <div class="p-card"><h3>Сімейна фотосесія</h3><div class="p-price">1500 грн</div><ul><li>за 1 години зйомки</li><li>допомога в підборі образів для всієї родини</li><li>підбір референсів перед зйомкою</li><li>усі вдалі фото в обробці та ретуші</li><li>готовність фото: до 2 днів</li></ul></div>
+      <div class="p-card"><h3>Випускна фотосесія</h3><div class="p-price">2000 грн</div><ul><li>за 1 години зйомки</li><li>індивідуальні та групові кадри</li><li>консультація по образах</li><li>підбір референсів перед зйомкою</li><li>усі вдалі фото в обробці та ретуші</li><li>готовність фото: до 3 днів</li></ul></div>
+      <div class="p-card"><h3>Весільна фотосесія</h3><div class="p-price">2500 грн</div><ul><li>за 1 години зйомки</li><li>репортажні та постановочні кадри</li><li>консультація по образах</li><li>підбір референсів перед зйомкою</li><li>усі вдалі фото в обробці та ретуші</li><li>готовність фото: 1-2 тижні</li></ul></div>
+    </div>
+    <div class="p-foot"><span>✨ Зйомка в студії або на природі (залежно від вашого запиту)</span><span>📍 Кам’янець-Подільський</span></div>
   </div>
 </section>
 
